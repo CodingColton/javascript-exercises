@@ -3,7 +3,7 @@ const repeatString = function(text, number) {
         return 'ERROR';
     }
     let string = '';
-    for (i = 0; i < number; i++) {
+    for (let i = 0; i < number; i++) {
         string = string + text;
     }
     return string;

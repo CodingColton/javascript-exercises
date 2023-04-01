@@ -2,8 +2,10 @@ const sumAll = function(...args) {
     let newArray = [];
     let total = 0;
     args.sort()
-    if (args[0] < 0) {
-        return 'ERROR';
+    for (i = 0; i < args.length; i++) {
+        if ((args[i] < 0) || (Array.isArray(args[i]))) {
+            return 'ERROR';
+        }
     }
     for (let i = args[(args.length - 1)]; i >= 0; i--) {
         

@@ -14,16 +14,24 @@ const sum = function(array) {
   return totalSum;
 };
 
-const multiply = function() {
-
+const multiply = function(array) {
+  let total = 1;
+	for (let index = 0; index < array.length; index++) {
+    total *= array[index];
+  }
+  return total;
 };
 
-const power = function() {
-	
+const power = function(a, b) {
+	return Math.pow(a, b);
 };
 
-const factorial = function() {
-	
+const factorial = function(number) {
+  let total = 1;
+	for (let i = number; i > 0; i--) {
+    total *= i;
+  }
+  return total;
 };
 
 // Do not edit below this line

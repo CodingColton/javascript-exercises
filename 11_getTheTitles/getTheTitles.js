@@ -1,9 +1,5 @@
-const getTheTitles = function(object) {
-    booksList = [];
-    for (let book = 0; book < object.length; book++) {
-        booksList.push(object[book]["title"]);
-    }
-    return booksList;
+const getTheTitles = function(array) {
+    return array.map((array) => array.title);
 };
 
 // Do not edit below this line
